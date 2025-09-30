@@ -18,18 +18,7 @@ console.log(y); // 10
 // const (não pode reatribuir)
 const z = 10;
 z = 20; // Erro! Não pode mudar o valor de z
+
 const arr = [1, 2, 3];
 arr.push(4); // Isso funciona! O conteúdo do array pode mudar
-
-// Tipos primitivos
-const texto = "Olá, mundo!";
-const numero = 42;
-const ativo = true;
-const vazio = null;
-let indefinido; // valor padrão é undefined
-
-console.log(typeof texto); // string
-console.log(typeof numero); // number
-console.log(typeof ativo); // boolean
-console.log(typeof vazio); // object (comportamento histórico do JS)
-console.log(typeof indefinido); // undefined
+console.log(arr); // [1, 2, 3, 4]

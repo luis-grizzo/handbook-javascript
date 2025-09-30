@@ -26,16 +26,6 @@ As variáveis armazenam valores que podem ser utilizados e modificados no decorr
 - **Valor imutável:** Não pode ser reatribuída (mas objetos e arrays podem ser modificados internamente).
 - **Usada para valores que não mudam:** Ideal para constantes.
 
-## Tipos de dados primitivos
-
-- `string`
-- `number`
-- `boolean`
-- `null`
-- `undefined`
-- `symbol`
-- `bigint`
-
 ## Boas práticas
 
 - Prefira `const` sempre que possível.
