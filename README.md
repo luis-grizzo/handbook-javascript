@@ -4,6 +4,18 @@ Repositório de estudos e referência em JavaScript — organizado para facilita
 
 ---
 
+### 🛠️ Pré-requisitos
+
+Para executar os arquivos JavaScript deste repositório, é necessário ter o [Node.js](https://nodejs.org/) instalado em sua máquina. Verifique a instalação com:
+
+```bash
+node -v
+```
+
+Caso não tenha o Node.js, acesse o site oficial para download e instruções de instalação.
+
+---
+
 ### 🎯 Objetivos
 
 - Estudar e revisar conceitos do JavaScript
