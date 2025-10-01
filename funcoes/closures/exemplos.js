@@ -1,47 +1,47 @@
 // Exemplo 1 - Função interna acessando escopo externo
-function saudacao(nome) {
+function greeting(name) {
   return function () {
-    console.log(`Olá, ${nome}!`);
+    console.log(`Hello, ${name}!`);
   };
 }
 
-const olaJoao = saudacao("João");
-olaJoao(); // "Olá, João!"
+const helloJohn = greeting("John");
+helloJohn(); // "Hello, John!"
 
 // Exemplo 2 - Função fábrica
-function multiplicador(fator) {
+function multiplier(factor) {
   return function (n) {
-    return n * fator;
+    return n * factor;
   };
 }
 
-const dobro = multiplicador(2);
-const triplo = multiplicador(3);
+const double = multiplier(2);
+const triple = multiplier(3);
 
-console.log(dobro(5)); // 10
-console.log(triplo(5)); // 15
+console.log(double(5)); // 10
+console.log(triple(5)); // 15
 
 // Exemplo 3 - Variável privada com closure
-function contador() {
-  let valor = 0;
+function counter() {
+  let value = 0;
 
   return {
-    incrementar: function () {
-      valor++;
-      return valor;
+    increment: function () {
+      value++;
+      return value;
     },
-    decrementar: function () {
-      valor--;
-      return valor;
+    decrement: function () {
+      value--;
+      return value;
     },
-    obterValor: function () {
-      return valor;
+    getValue: function () {
+      return value;
     },
   };
 }
 
-const c = contador();
-console.log(c.incrementar()); // 1
-console.log(c.incrementar()); // 2
-console.log(c.obterValor()); // 2
-console.log(c.decrementar()); // 1
+const cnt = counter();
+console.log(cnt.increment()); // 1
+console.log(cnt.increment()); // 2
+console.log(cnt.getValue()); // 2
+console.log(cnt.decrement()); // 1

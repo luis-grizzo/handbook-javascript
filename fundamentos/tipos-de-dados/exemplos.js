@@ -3,25 +3,25 @@
 // ----- Primitivos -----
 
 // string
-const nome = "Maria";
-console.log(typeof nome); // "string"
+const name = "Maria";
+console.log(typeof name); // "string"
 
 // number
-const idade = 30;
-const altura = 1.75;
-console.log(typeof idade, typeof altura); // "number" "number"
+const age = 30;
+const height = 1.75;
+console.log(typeof age, typeof height); // "number" "number"
 
 // boolean
-const ativo = true;
-console.log(typeof ativo); // "boolean"
+const active = true;
+console.log(typeof active); // "boolean"
 
 // undefined
 let x;
 console.log(typeof x); // "undefined"
 
 // null
-const vazio = null;
-console.log(typeof vazio); // "object" (peculiaridade do JS)
+const empty = null;
+console.log(typeof empty); // "object" (peculiaridade do JS)
 
 // symbol
 const id = Symbol("id");
@@ -34,15 +34,15 @@ console.log(typeof big); // "bigint"
 // ----- Referência -----
 
 // Object
-const pessoa = { nome: "Maria", idade: 30 };
-console.log(typeof pessoa); // "object"
+const person = { name: "Maria", age: 30 };
+console.log(typeof person); // "object"
 
 // Array
-const lista = [1, 2, 3];
-console.log(typeof lista); // "object" (arrays são objetos em JS)
+const list = [1, 2, 3];
+console.log(typeof list); // "object" (arrays são objetos em JS)
 
 // Function
-function somar(a, b) {
+function sum(a, b) {
   return a + b;
 }
-console.log(typeof somar); // "function"
+console.log(typeof sum); // "function"

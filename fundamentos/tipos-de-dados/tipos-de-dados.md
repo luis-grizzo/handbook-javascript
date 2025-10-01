@@ -2,9 +2,7 @@
 
 O JavaScript possui dois grandes grupos de tipos de dados: **primitivos** e **estruturados (ou de referência)**.
 
----
-
-### Tipos Primitivos
+## Tipos Primitivos
 
 São imutáveis e armazenados diretamente na memória.
 
@@ -16,9 +14,7 @@ São imutáveis e armazenados diretamente na memória.
 - **symbol** → valores únicos e imutáveis (ES6)
 - **bigint** → números inteiros muito grandes (ES2020)
 
----
-
-### Tipos de Referência
+## Tipos de Referência
 
 São objetos armazenados por referência.
 
@@ -29,16 +25,12 @@ São objetos armazenados por referência.
 - **RegExp**
 - e outros…
 
----
-
-### Diferença importante
+## Diferença importante
 
 - Tipos **primitivos** são copiados por valor.
 - Tipos **de referência** são copiados por referência.
 
----
-
-### Referências
+## Referências
 
 - [MDN - Tipos de dados](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Data_structures)
 - [JavaScript.info - Data types](https://javascript.info/types)

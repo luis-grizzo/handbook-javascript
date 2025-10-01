@@ -1,33 +1,33 @@
 // Exemplo 1 - Função pura
-function soma(a, b) {
+function sum(a, b) {
   return a + b; // sempre o mesmo resultado para os mesmos parâmetros
 }
-console.log(soma(2, 3)); // 5
+console.log(sum(2, 3)); // 5
 
 // Exemplo 2 - Função impura (depende de estado externo)
-let contador = 0;
-function incrementar() {
-  contador++; // efeito colateral
-  return contador;
+let counter = 0;
+function increment() {
+  counter++; // efeito colateral
+  return counter;
 }
-console.log(incrementar()); // valor depende de contador externo
+console.log(increment()); // valor depende de contador externo
 
 // Exemplo 3 - Função pura com arrays (usando map)
-function dobrar(lista) {
-  return lista.map((n) => n * 2); // não altera a lista original
+function double(list) {
+  return list.map((n) => n * 2); // não altera a lista original
 }
-console.log(dobrar([1, 2, 3])); // [2, 4, 6]
+console.log(double([1, 2, 3])); // [2, 4, 6]
 
 // Exemplo 4 - Impura vs pura com objetos
-function adicionarIdImpuro(obj) {
+function addIdImpure(obj) {
   obj.id = Math.random(); // modifica o objeto original
   return obj;
 }
 
-function adicionarIdPuro(obj) {
+function addIdPure(obj) {
   return { ...obj, id: Math.random() }; // cria novo objeto
 }
 
-const user = { nome: "Ana" };
-console.log(adicionarIdImpuro(user)); // modifica o original
-console.log(adicionarIdPuro(user)); // cria um novo
+const user = { name: "Ana" };
+console.log(addIdImpure(user)); // modifica o original
+console.log(addIdPure(user)); // cria um novo

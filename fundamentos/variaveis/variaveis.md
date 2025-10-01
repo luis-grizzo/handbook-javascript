@@ -10,15 +10,11 @@ As variáveis armazenam valores que podem ser utilizados e modificados no decorr
 - **Hoisting:** O JavaScript "move" a declaração para o topo do escopo antes de executar o código. Isso pode causar confusão, pois você pode usar a variável antes de declará-la.
 - **Deve ser evitada:** Por ser antiga e causar comportamentos inesperados, prefira let ou const.
 
----
-
 ### `let`
 
 - **Escopo de bloco:** Só existe dentro do bloco `{ ... }` onde foi criada (por exemplo, dentro de um if, for, etc).
 - **Mais moderna e segura:** Evita problemas de sobrescrita e hoisting.
 - **Pode ser reatribuída:** Você pode mudar o valor depois de criar.
-
----
 
 ### `const`
 
@@ -32,8 +28,6 @@ As variáveis armazenam valores que podem ser utilizados e modificados no decorr
 - Use `let` apenas quando precisar reatribuir valores.
 - Evite `var` em código moderno.
 
----
-
-📚 Referências:
+## 📚 Referências:
 
 - [MDN - Variáveis](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/Variables)
